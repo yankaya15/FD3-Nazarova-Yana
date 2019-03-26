@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>Каталог товаров</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="CatalogBlock.js"></script>
+  <link rel="stylesheet" type="text/css" href="CatalogBlock.css" />
+
+  <script>
+    var nameMarket='Зоомагазин Гарфилд';
+    var productsArr=[ 
+      {text:'сухие корма',code:1,price:'10br',img:'https://garfield.by/upload/resize_cache/iblock/91d/165_143_1/91d656cc088dcffb22314ba82425751b.jpg',count:50}, 
+      {text:'консервы',code:2,price:'12br',img:'https://garfield.by/upload/resize_cache/iblock/578/165_143_1/5781a385aa292274966a7bc330249770.jpg',count:50}, 
+      {text:'витамины',code:3,price:'20br',img:'https://garfield.by/upload/resize_cache/iblock/bd9/165_143_1/bd997d958554c85111221d16415dffa8.jpg',count:80},
+      {text:'миски',code:4,price:'25br',img:'https://garfield.by/upload/resize_cache/iblock/87a/165_143_1/87aa164677dbf11b059c6fd7da7deb42.jpg',count:20},
+      {text:'игрушки',code:5,price:'5br',img:'https://garfield.by/upload/resize_cache/iblock/a58/165_143_1/a5899f3841d864b88070e1d3188f2d59.jpg',count:100},
+      {text:'лотки',code:6,price:'10br',img:'https://garfield.by/upload/resize_cache/iblock/af2/165_143_1/af2dab8c318a2b13025bb9ecfd530a22.jpg',count:10},
+      {text:'домики',code:7,price:'40br',img:'https://garfield.by/upload/resize_cache/iblock/3f2/165_143_1/3f2acc7e49e8e4535f627ef1aa0a01ab.jpg',count:3}, 
+    ];
+    ReactDOM.render(
+      React.createElement(CatalogBlock,{market:nameMarket,products:productsArr}), 
+      document.getElementById('container') 
+    );
+  </script>
+
+</body> 
+</html>
