@@ -13,18 +13,18 @@ var CatalogBlock = React.createClass({
         for ( var a=0; a<this.props.products.length; a++ ) {
             var product=this.props.products[a];
             var productCode=        
-            React.DOM.div({key:product.code,className:'Product'},
-                React.DOM.span({className:'Text'},product.text),
-                React.DOM.span({className:'Price'},product.price),
-                React.DOM.span({className:'Img'},product.img),
-                React.DOM.span({className:'Count'},product.count),
+            React.DOM.tr({key:product.code,className:'Product'},
+                React.DOM.td({className:'Text'},product.text),
+                React.DOM.td({className:'Price'},product.price),
+                React.DOM.td({className:'Img'},product.img),
+                React.DOM.td({className:'Count'},product.count),
             );
             productsCode.push(productCode);
       };
       
       return React.DOM.div( {className:'CatalogBlock'}, 
         React.DOM.div( {className:'Market'}, this.props.market ),
-        React.DOM.div( {className:'Products'}, productsCode ),
+        React.DOM.table( {className:'Products'}, productsCode ),
       );
     },
   
