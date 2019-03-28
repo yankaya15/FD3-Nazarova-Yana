@@ -17,7 +17,6 @@
   font-weight: bold;
   text-align: center;
   padding: 10px 20px;
-  border-right: 2px solid; 
 }
 
 .CatalogBlock .Products
@@ -55,12 +54,7 @@
   text-align: left;
 }
 
-th:first-child {
-  text-align: left;
-  }
-  th:last-child {
-  border-right: none;
-  }
+
   td {
   vertical-align: middle;
   padding: 10px;
