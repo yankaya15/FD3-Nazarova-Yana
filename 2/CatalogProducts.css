@@ -1,0 +1,51 @@
+.CatalogBlock .Products
+{
+  padding-top: 5px;
+}
+
+.CatalogBlock .Products .Product
+{
+  padding: 2px 0;
+}
+
+.CatalogBlock .Products .Product .Count
+{
+  
+  width: 100px;
+  text-align: right;
+}
+.CatalogBlock .Products .Product .Price
+{
+  
+  width: 100px;
+  text-align: center;
+}
+.CatalogBlock .Products .Product .Img
+{
+  
+  width: 200px;
+  text-align: left;
+}
+
+.CatalogBlock .Products .Product .Text
+{
+  margin-right: 30px;
+  text-align: left;
+}
+
+
+  td {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #56433D;
+  border-bottom: 2px solid #56433D;
+  border-right: 2px solid #56433D;
+  }
+  td:first-child {
+  border-left: 2px solid #56433D;
+  }
+  td:nth-child(2){
+  text-align: left;
+  }
